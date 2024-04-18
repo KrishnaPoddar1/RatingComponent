@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-orange: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-lightGrey: hsl(217, 12%, 63%);
+    --neutral-mediumGrey: hsl(216, 12%, 54%);
+    --neutral-darkBlue: hsl(213, 19%, 18%);
+    --neutral-veryDarkBlue: hsl(216, 12%, 8%);
+
+    --fs-para: 15px;
+    --font-family: "Overpass", sans-serif;
+    --fw-light: 400;
+    --fw-bold: 700;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: var(--neutral-white);
+    background-color: var(--neutral-veryDarkBlue);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    
+    align-items: center;
+    width: 50%;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: var(--neutral-darkBlue);
+}
+
+.hidden{
+    display: none;
+}
+
+.light {
+    color: var(--neutral-lightGrey);
+}
+
+.img-container, .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(212, 28%, 74%, 0.171);
+}
+
+.circle:hover{
+    cursor: pointer;
+    background-color: var(--neutral-mediumGrey);
+    color: var(--neutral-white);
+}
+
+.circle-selected {
+    background-color: var(--primary-orange);
+    color: var(--neutral-white);
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+
+#one {
+    grid-column: 1/span 1;
+    justify-self: center;
+}
+
+#two {
+    grid-column: 2/span 1;
+    justify-self: center;
+}
+
+#three {
+    grid-column: 3/span 1;
+    justify-self: center;
+}
+
+#four {
+    grid-column: 4/span 1;
+    justify-self: center;
+}
+
+#five {
+    grid-column: 5/span 1;
+    justify-self: center;
+}
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--neutral-white);
+    background-color: var(--primary-orange);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.text-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#rating  {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: var(--primary-orange);
+    width: 70%;
+    margin: 0 auto;
+    background-color: hsla(212, 28%, 74%, 0.171);
+}
+
+@media screen and (min-width:768px) {
+    .card{
+        width: 20rem;
+    }
+}

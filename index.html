@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="main">
+    <section class="container">
+      <section class="card" id="main">
+        <section class="img-container">
+          <img src="images/icon-star.svg" alt="Star Icon">
+        </section>
+        
+        <h1>How did we do?</h1>
+        <p class="light">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <section class="numbers light">
+          <p class="circle" id="one">1</p>
+          <p class="circle" id="two">2</p>
+          <p class="circle" id="three">3</p>
+          <p class="circle" id="four">4</p>
+          <p class="circle" id="five">5</p>
+        </section>
+        <button type="submit" id="submit">Submit</button>
+      </section>
+      
+      <section id="thankyou" class="card hidden">
+        <section class="img-wrapper">
+          <img src="images/illustration-thank-you.svg" alt="Thank You icon"> 
+        </section>
+        <section class="text-wrapper">
+          <p id="rating">You selected <span id="ratingvalue"></span> out of 5</p>
+          <h1>Thank you!</h1>
+          <p  class="light">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>  
+        </section>
+        
+      </section>
+    </section>
+    
+  </main>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
